@@ -23,7 +23,7 @@ function Home() {
   console.log(movies);
   
   return (
-    <div className={styles.container}>
+    <div className={styles.container}>      
       {loading ? (
       <h1>Loading...</h1>
       ) : (
