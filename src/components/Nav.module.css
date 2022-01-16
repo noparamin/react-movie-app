@@ -1,11 +1,13 @@
 .header {
     width: 100%;
     height: 100%;
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .section {
     width: 1720px;
-    height: 100px;
+    height: 60px;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -15,8 +17,23 @@
 .logo {
     flex: 1;
     padding: 0 0 0 30px;
-    line-height: 2.75;
-    font-size: 36px;
+    line-height: 4.3;
+    font-size: 20px;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+
+.a:visited {
+    color: black;
+}
+
+.a:hover {
+    transform: scale(1.1);
 }
 
 .nav {
@@ -31,8 +48,17 @@
 
 .nav ul li{
     margin: 0 15px;
-    line-height: 6.25;
+    line-height: 1.5;
     font-size: 16px;
+}
+
+.ul {
+    display: blcok;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
 .sns {
@@ -46,10 +72,11 @@
 }
 
 .sns ul li {
-    line-height: 6.25;
+    line-height: 1.5;
     margin-right: 30px;
     font-size: 16px;
 }
+
 
 
 
