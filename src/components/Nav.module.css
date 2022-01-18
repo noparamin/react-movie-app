@@ -6,8 +6,7 @@
 }
 
 .section {
-    width: 1720px;
-    height: 60px;
+    height: 60px; 
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -78,6 +77,11 @@
     font-size: 16px;
 }
 
+@media screen and (max-width: 1090px) {
+    .header {
+      width: 100%;
+    }
+}
 
 
 

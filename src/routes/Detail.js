@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import DetailedMovie from "../components/DetailedMovie";
+import Loading from "../components/Loading";
 
 function Detail() {
     const {id} = useParams();
@@ -20,7 +21,7 @@ function Detail() {
     console.log(movie);
     return (
     <div>
-        {loading ? <h1>Loading...</h1> : 
+        {loading ? <Loading /> : 
         <div>
             <DetailedMovie coverImg={movie.medium_cover_image} title={movie.title} rating={movie.rating} runtime={movie.runtime} description={movie.description_full} />
         </div>}
