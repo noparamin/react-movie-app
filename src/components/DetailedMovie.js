@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import style from "./DetailedMovie.module.css";
 
-function DetailedMovie({coverImg, title, rating, runtime}) {
+function DetailedMovie({coverImg, title, rating, runtime, description}) {
     return (
     <div>
         <div className={style.box}>
@@ -16,6 +16,7 @@ function DetailedMovie({coverImg, title, rating, runtime}) {
                 <h3>
                     Running time: {runtime} min
                 </h3>
+                <h4>{description}</h4>
             </div>
             
         </div>
@@ -29,6 +30,7 @@ DetailedMovie.propTypes = {
     title: PropTypes.string.isRequired,
     rating: PropTypes.number.isRequired,
     runtime: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired
 };
 
 export default DetailedMovie;
