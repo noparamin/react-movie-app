@@ -11,7 +11,7 @@ function DetailedMovie({coverImg, title, rating, runtime, description}) {
             <div className={style.text}>
                 <h2>{title}</h2>
                 <h3>
-                    Rating: {rating}
+                    Rating: {rating} / 10
                 </h3>
                 <h3>
                     Running time: {runtime} min
